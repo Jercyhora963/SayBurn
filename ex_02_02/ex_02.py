@@ -16,5 +16,3 @@ print(nam)
 print(age)
 print(gender)
 print(position)
-
-
