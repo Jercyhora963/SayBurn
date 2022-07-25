@@ -4,7 +4,6 @@ nam=input('Who are you?')
 print('Hello', nam)
 
 age=input('How old are you?')
-print('Tangina ka! '+age + 'ka na palang hayuf ka')
 
 #Exercise: Write a program to prompt the user for hours and rate per hour to compute gross pay.
 hours=35
