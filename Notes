@@ -3,4 +3,7 @@ This txt file is the place where I put all of the new things that I learn in abl
 git command 
 	cat - is use to read a file using git
 	nano - is use to open and edit the file on git
+	rmdir - remove/delete directory or folder
+	rm - remove file
+	ls -la  - to see the list with additional details
 
