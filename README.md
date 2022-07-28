@@ -13,3 +13,7 @@ Notes :
 * store and reuse
 * loops and iterations
 
+-------
+
+ -cat is use to read file
+ -nano is use to edit while you are at gitbash
