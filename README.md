@@ -15,5 +15,3 @@ Notes :
 
 -------
 
- -cat is use to read file
- -nano is use to edit while you are at gitbash
