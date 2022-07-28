@@ -1,6 +1,6 @@
 This txt file is the place where I put all of the new things that I learn in able to remember it :
 
-git command 
+	git command 
 
 cat - is use to read a file using git
 
@@ -26,4 +26,20 @@ mv - command is used both to change the name of a file and to move a file into a
 
 touch - is use to create files
 		ex : $ mv day-2.txt second-day.txt
+
+git log - this will list down all the commit history
+
+git log --oneline - minified log history
+
+git checkout commit-id - identify the commit id of each commit
+
+
+git branch branch-name - only to create branch
+
+git checkout -b branch-name - to create and checkout to the branch at the same time
+
+git checkout main / git checkout branch-name - to switch between branches 
+
+git branch - to list down branch
+
 
