@@ -8,6 +8,7 @@ while True :
 		fval = float(sval)
 		num = num + 1
 		tot = tot + fval
+		print(fval,num)
 	except :
 		print('invalid input')
 		continue
