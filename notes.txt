@@ -1,3 +1,5 @@
+-start-
+
 This txt file is the place where I put all of the new things that I learn in able to remember it :
 
 	git command 
@@ -43,3 +45,4 @@ git checkout main / git checkout branch-name - to switch between branches
 git branch - to list down branch
 
 
+-end-
