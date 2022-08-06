@@ -44,4 +44,120 @@ git checkout main / git checkout branch-name - to switch between branches
 
 git branch - to list down branch
 
+
+	- PROGRAMMING
+
+*Algorithms -
+A set of rules or steps used to solve a problem
+*Data Structures -
+A particular way of organizing data in a computer
+
+
+A List is kind of Collection
+- A collection allows us to put many values in a single "variable"
+- A collection is nice because we can carry all many values aroun
+  in one convenient package.
+
+friends = [ 'Joseph', 'Glenn', 'Sally' ]
+carryon = [ 'socks', 'shirt', 'perfume' ]
+
+_____
+
+List Constants
+-List constants are surrounded by square brackets and the elements
+in the list are separated by commas
+-A list element can be any Python object - even another list
+-A list can be empty
+
+>>> print([1, 24, 76])
+[1, 24, 76]
+>>> print(['red', 'yellow', 'blue'])
+['red', 'yellow', 'blue']
+>>> print(['red', 24, 98.6])
+['red', 24, 98.6]
+>>> print([ 1, [5, 6], 7])
+[1, [5, 6], 7]
+>>> print([])
+[]
+_________
+
+We already use lists!
+
+for i in [5, 4, 3 ,2 1] :
+	print(i)
+print('Blastoff!')
+
+_________
+
+Lists and definite loops - best pals
+
+frieds = ['Joseph', 'Glenn', 'Sally']
+for friend in friends :
+	print('Happy New Year :', friend)
+print('Done')
+
+z = ['Joseph', 'Glenn', 'Sally']
+for x in i :
+	print('Happy New Year:', x)
+print('Done!')
+
+________
+
+ 
+	Looking inside lists
+Just like strings, we can get at any single element in a list using
+an index specified in square brackets.
+
+>>> friends = [ 'Joseph', 'Glenn', 'Sally' ]
+>>> print(friends[1])
+Glenn
+>>>
+
+_______
+
+	Lists are mutable
+- Strings are "immutable" - we cannot change the contents of a
+string - we must make a new string to make any change.
+- Lists are "mutable" - we can change an element of a list using
+the index operator.
+
+>>> fruit = 'Banana'
+>>> fruit[0] = 'b'
+Traceback
+TypeError: 'str' object does not support item assigment
+>>> x = fruit.lower()
+>>>print(x)
+banana
+>>> lotto = [2, 14, 26, 41, 63]
+>>> print(lotto)
+[2, 14, 26, 41, 63]
+>>> lotto[2] = 28
+>>> print(lotto)
+[2, 14, 28, 41, 63]
+
+_______
+
+	Using the range function
+- The range function returns a list of numbers that range from
+zero to one less than the parameter
+- We can construct an index loop using for and an integer iterator
+
+>>> print(range(4))
+[0, 1, 2, 3]
+>>> friends = ['Joseph', 'Glenn', 'Sally']
+>>> print(len(friends))
+3
+>>> print(range(len(friends)))
+[0, 1, 2]
+>>>
+
+_____
+
+	Concatenating lists using +
+>>> a = [1, 2, 3]
+>>> b = [4, 5, 6]
+>>> c = a + b
+
+
+
 -end-
