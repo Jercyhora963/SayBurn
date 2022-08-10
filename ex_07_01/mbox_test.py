@@ -1,7 +1,5 @@
 fhand  = open('mbox-short.txt')
 for line in fhand:
 	line = line.rstrip()
-	if not line.startswith('From ') :
-	words = line.split()
-	print(words[2])
-
+	wds = line.split()
+	print(wds[0])

@@ -1,3 +1,6 @@
+from msilib.schema import Class
+
+
 print('Concatenating lists using +')
 
 a = [1, 2, 3]
