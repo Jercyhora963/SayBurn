@@ -1,11 +1,3 @@
-f = input('Enter filename     :.')
-fname = open(f)
+c = {'a':10, 'b':1, 'c':22}
 
-box = dict()
-for line in fname :
-	line = line.rstrip()
-	words = line.split()
-	for word in words :
-		box[word] = box.get(word, 0) + 1
-		print(box)
-print('Last :', box)
+print( sorted( [ (v,k) for k,v in c.items() ] ) )
