@@ -1,23 +1,97 @@
-fname = input('Enter text:')
-if len(fname) < 1 : fname = 'clown.txt'
-hand = open(fname)
+from re import X
+from typing import NewType
+
+
+fh = input('Enter filename : ')
+if len(fh) < 1 :
+	fh = 'clown.txt'
+fnam = open(fh)
 
 di = dict()
-for line in hand :
-	line = line.rstrip()
-	wds = line.split()
+for l in fnam :
+	l = l.strip()
+	wds = l.split()
 	for w in wds :
-		# idiom: retrieve/create/update counter
 		di[w] = di.get(w, 0) + 1
-
-#print(di)
-
 tmp = list()
-for k,v in di.items() :
-	newt = (v, k)
+for k, v in di.items() :
+	newt = (v,k)
 	tmp.append(newt)
 
-print('Flipped :', tmp)
+#print('Flipped :', tmp)
+
+#lists can be sorted using sorted()
+tmp = sorted(tmp[:5])
+#print('Sorted :', tmp)
+
+#for v, k in tmp[:5] :
+	#print(v, k)
+
+for v, k in tmp[:5] :
+	print(k, v)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# print('original dictionary :', di)
+
+#li = list()
+#for k, v in sorted(di.items()) :
+#	newt = (v,k)
+#	li.append(newt)
+#print('value at first', li[:5])
+
+#x = sorted(di.items())
+#print('sorted dictionary :', x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#----------------------------------------------------
+#fname = input('Enter text:')
+#if len(fname) < 1 : fname = 'clown.txt'
+#hand = open(fname)
+#
+#di = dict()
+#for line in hand :
+#	line = line.rstrip()
+#	wds = line.split()
+#	for w in wds :
+#		# idiom: retrieve/create/update counter
+#		di[w] = di.get(w, 0) + 1
+#
+##print(di)
+#
+#tmp = list()
+#for k,v in di.items() :
+#	newt = (v, k)
+#	tmp.append(newt)
+#
+#print('Flipped :', tmp)
 
 
 
