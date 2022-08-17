@@ -21,7 +21,7 @@ for k, v in di.items() :
 #print('Flipped :', tmp)
 
 #lists can be sorted using sorted()
-tmp = sorted(tmp[:5])
+tmp = sorted(tmp[:5], reverse=True)
 #print('Sorted :', tmp)
 
 #for v, k in tmp[:5] :
