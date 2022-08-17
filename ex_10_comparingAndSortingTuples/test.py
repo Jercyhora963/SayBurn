@@ -7,9 +7,5 @@ for line in fname :
 	words = line.split()
 	for word in words :
 		box[word] = box.get(word, 0) + 1
-
-largest = -1
-for a, b in box.items() :
-	if b > largest :
-		largest = b
-		print(largest)
+		print(box)
+print('Last :', box)
