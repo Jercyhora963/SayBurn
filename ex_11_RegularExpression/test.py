@@ -1,9 +1,10 @@
-data = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
-atpos = data.find('@')
-print(atpos)
+import urllib.request, urllib.parse, urllib.error
+from bs4 import BeautifulSoup
 
-sppos = data.find(' ' , atpos)
-print(sppos)
+site = input('Enter --->')
+html = urllib.request.urlopen(site).read()
+soup = BeautifulSoup(html, 'html.parser')
 
-host = data[atpos+1 : sppos]
-print(host)
+tags = soup('a')
+for tag in tags :
+	print(tag.get('href', None))
